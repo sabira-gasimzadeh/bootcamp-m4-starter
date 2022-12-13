@@ -1,11 +1,22 @@
+
 .header {
-    background: #496DDB;
-    padding: 20px calc(50% - 500px) 10px;
+    background: #03a8b4;
+    height: 7vw;
+    min-width: 100vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .header__title {
     font-family: 'Luckiest Guy', cursive;
-    color: #FFEEDB;
-    font-size: 45px;
-    margin-left: 40px;
+    color: #ffeedd;
+    font-size: 4.3625vw;
+    position: relative;
+    top: 1.2vw;
+    margin-left: 4vw;
+}
+
+.header__title:hover{
+    transform: translateY(5px);
 }

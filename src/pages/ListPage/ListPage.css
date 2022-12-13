@@ -1,12 +1,24 @@
 .list-page {
-    padding: 42px calc(50% - 300px);
+    padding: 3.652173913043478vw calc(50% - 26.08695652173913vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .list-page__title {
-    font-size: 34px;
-    margin-bottom: 26px;
+    font-size: 2.9565217391304346vw;
+    margin-bottom: 9.217391304347826vw;
+    color:#496DDB ;
 }
-
+.list-page ul{
+    width: 30.47826086956522vw;
+    text-align: left;
+}
 .list-page ul li {
-    font-size: 18px;
+    font-size: 1.565217391304348vw;
+    padding: 0.8695652173913043vw;
+}
+.list-page ul li a{
+    text-decoration: none;
+    color: #000;
 }
