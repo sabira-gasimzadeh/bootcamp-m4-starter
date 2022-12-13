@@ -19,7 +19,7 @@ class ListPage extends Component {
     render() {
         return (
             <div className="list-page">
-                <h1 className="list-page__title">Ваше имя списка {this.state.title}🤙</h1>
+                <h1 className="list-page__title">📋 Your list name is {this.state.title} 📋</h1>
                 <ul>
                     {this.state.movies.map((item) => {
                         return (

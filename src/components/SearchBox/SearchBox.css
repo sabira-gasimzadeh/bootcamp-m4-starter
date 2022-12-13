@@ -74,7 +74,8 @@
     border: none;
     transition: all 0.2s linear;
     color: #ffeedb;
-    background-color: rgba(0, 8, 7);
+    background-color: #066f99;
+    color: #ffeedb;
   }
 
   .search-box__form-submit:hover:not(:disabled) {
@@ -82,7 +83,7 @@
     cursor: pointer;
     transition: all 0.2s linear;
     background-color: #ffeedb;
-    color: rgba(0, 8, 7);
+    color: #066f99;
   }
 
   .search-box__form-submit:disabled {

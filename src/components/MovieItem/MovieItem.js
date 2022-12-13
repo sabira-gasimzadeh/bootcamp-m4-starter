@@ -47,7 +47,7 @@ class MovieItem extends Component {
             type="button"
             className="movie-item__add-button"
           >
-            добавить в избранное🤙
+            Add to favorites❤️
           
             {/* {this.props.buttonTextId === 1 ? "Добавлено" : "Добавить в список" } */}
           </button>

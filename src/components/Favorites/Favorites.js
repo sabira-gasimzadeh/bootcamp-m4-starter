@@ -72,7 +72,7 @@ class Favorites extends Component {
                     this.props.changeButtonName(0)
                   }}
                 >
-                  x
+                  🗑️
                 </button>
               </li>
             );
@@ -80,7 +80,7 @@ class Favorites extends Component {
         </ul>
         <div ref={this.enterLink} className="enterLink"><a href={`list/${this.state.id}`}>Link</a></div>
         <button onClick={this.postList} ref={this.closeLink} disabled={!this.state.title || this.props.favMovie.length===0} type="button" className="favorites__save">
-          Сохранить список
+         Save list
         </button>
       </div>
     );

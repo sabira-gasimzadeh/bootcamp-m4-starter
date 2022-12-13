@@ -22,3 +22,7 @@
     text-decoration: none;
     color: #000;
 }
+
+.list-page ul li a:hover{
+    color: #496DDB;
+}

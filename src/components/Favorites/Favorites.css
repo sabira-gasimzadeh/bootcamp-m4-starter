@@ -90,12 +90,16 @@
     height: 5vw;
     display: flex;
     align-items: center;
+    background-color: #066f99;
+    color: #FFEEDB;
 }
 
 .favorites__save:hover {
     cursor: pointer;
     opacity: 0.9;
     transition: all 0.2s linear;
+    background-color: #FFEEDB;
+    color: #066f99;
 }
 .enterLink{
   font-size: 1.7391304347826084vw;
