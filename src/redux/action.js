@@ -39,14 +39,6 @@ export function removeMovieFromFavoriteList(id) {
       },
     };
   }
-  // export function changeButtonName(buttonTextId) {
-  //   return {
-  //     type: CHANGE_BUTTON_NAME,
-  //     payload: {
-  //       buttonTextId: buttonTextId,
-  //     },
-  //   };
-  // }
   export function deleteMovie(id){
       return{
           type : DELETE_MOVIE,

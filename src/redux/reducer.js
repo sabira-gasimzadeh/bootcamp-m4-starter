@@ -3,7 +3,7 @@ import {SUBMIT , DELETE_FAVORITE , DELETE_MOVIE , ADD_FAVORITE, CHANGE_BUTTON_NA
 const initialState = {
   allMovie: [],
   favMovie: [],
-  // buttonTextId: 0
+  buttonTextId: 0
 };
 
 export const reducer = (state = initialState, action) => {
@@ -27,9 +27,10 @@ export const reducer = (state = initialState, action) => {
         favMovie = [...state.favMovie, action.payload];
         return { ...state, favMovie };
       }
+      break;
     case CHANGE_BUTTON_NAME:
-      // buttonTextId = [...state.buttonTextId, action.payload.buttonTextId];
-      // return { ...state, buttonTextId};
+      buttonTextId = [...state.buttonTextId, action.payload.buttonTextId];
+      return { ...state, buttonTextId};
     case DELETE_FAVORITE:
       favMovie = state.favMovie.filter(
         (item, index) => index !== action.payload
@@ -38,5 +39,6 @@ export const reducer = (state = initialState, action) => {
     default:
       return state;
   }
+  return state;
 };
 export default reducer;

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./Favorites.css";
 import store from "../../redux/store";
-// import { changeButtonName } from "../../redux/action";
 
 class Favorites extends Component {
   constructor(props) {
@@ -26,7 +25,6 @@ class Favorites extends Component {
   postList = () => {
     this.enterLink.current.style.display = "block";
     this.closeLink.current.style.display = "none";
-    // this.deleteButton.current.style.display = "none";
     fetch(`https://acb-api.algoritmika.org/api/movies/list/`, {
       method: 'POST',
       headers: {
@@ -57,7 +55,6 @@ class Favorites extends Component {
         />
         <ul className="favorites__list">
           {this.props.favMovie.map((item, index) => {
-            // console.log(item);
             return (
               <li key={item.imdbID}>
                 {item.Title} ({item.Year})
@@ -69,7 +66,6 @@ class Favorites extends Component {
                       type: "DELETE_FAVORITE",
                       payload: index,
                     });
-                    this.props.changeButtonName(0)
                   }}
                 >
                   🗑️
@@ -91,11 +87,4 @@ const mapStateToProps = (state) => {
   return { favMovie: state.favMovie };
 };
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     changeButtonName: (buttonTextId) =>{
-//       // dispatch(changeButtonName(buttonTextId))
-//     }
-//   }
-// }
 export default connect(mapStateToProps)(Favorites);
